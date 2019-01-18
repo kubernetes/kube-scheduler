@@ -152,11 +152,11 @@
 		},
 		{
 			"ImportPath": "k8s.io/apiserver/pkg/apis/config",
-			"Rev": "e17da99637d8a36a35704c07be9f4d628c185f83"
+			"Rev": "54fba31b2f2538a2387d9b6256127d02c25958e9"
 		},
 		{
 			"ImportPath": "k8s.io/apiserver/pkg/apis/config/v1alpha1",
-			"Rev": "e17da99637d8a36a35704c07be9f4d628c185f83"
+			"Rev": "54fba31b2f2538a2387d9b6256127d02c25958e9"
 		},
 		{
 			"ImportPath": "k8s.io/utils/pointer",
