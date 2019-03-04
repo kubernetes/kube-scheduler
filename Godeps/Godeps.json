@@ -1,7 +1,7 @@
 {
 	"ImportPath": "k8s.io/kube-scheduler",
 	"GoVersion": "go1.12",
-	"GodepVersion": "v80-k8s-r1",
+	"GodepVersion": "v80",
 	"Packages": [
 		"./..."
 	],
@@ -56,95 +56,95 @@
 		},
 		{
 			"ImportPath": "k8s.io/apimachinery/pkg/api/resource",
-			"Rev": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+			"Rev": "706a7f72a784e633e2eb3ba2b9c46fa8f0f1d773"
 		},
 		{
 			"ImportPath": "k8s.io/apimachinery/pkg/apis/meta/v1",
-			"Rev": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+			"Rev": "706a7f72a784e633e2eb3ba2b9c46fa8f0f1d773"
 		},
 		{
 			"ImportPath": "k8s.io/apimachinery/pkg/conversion",
-			"Rev": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+			"Rev": "706a7f72a784e633e2eb3ba2b9c46fa8f0f1d773"
 		},
 		{
 			"ImportPath": "k8s.io/apimachinery/pkg/conversion/queryparams",
-			"Rev": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+			"Rev": "706a7f72a784e633e2eb3ba2b9c46fa8f0f1d773"
 		},
 		{
 			"ImportPath": "k8s.io/apimachinery/pkg/fields",
-			"Rev": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+			"Rev": "706a7f72a784e633e2eb3ba2b9c46fa8f0f1d773"
 		},
 		{
 			"ImportPath": "k8s.io/apimachinery/pkg/labels",
-			"Rev": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+			"Rev": "706a7f72a784e633e2eb3ba2b9c46fa8f0f1d773"
 		},
 		{
 			"ImportPath": "k8s.io/apimachinery/pkg/runtime",
-			"Rev": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+			"Rev": "706a7f72a784e633e2eb3ba2b9c46fa8f0f1d773"
 		},
 		{
 			"ImportPath": "k8s.io/apimachinery/pkg/runtime/schema",
-			"Rev": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+			"Rev": "706a7f72a784e633e2eb3ba2b9c46fa8f0f1d773"
 		},
 		{
 			"ImportPath": "k8s.io/apimachinery/pkg/selection",
-			"Rev": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+			"Rev": "706a7f72a784e633e2eb3ba2b9c46fa8f0f1d773"
 		},
 		{
 			"ImportPath": "k8s.io/apimachinery/pkg/types",
-			"Rev": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+			"Rev": "706a7f72a784e633e2eb3ba2b9c46fa8f0f1d773"
 		},
 		{
 			"ImportPath": "k8s.io/apimachinery/pkg/util/errors",
-			"Rev": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+			"Rev": "706a7f72a784e633e2eb3ba2b9c46fa8f0f1d773"
 		},
 		{
 			"ImportPath": "k8s.io/apimachinery/pkg/util/intstr",
-			"Rev": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+			"Rev": "706a7f72a784e633e2eb3ba2b9c46fa8f0f1d773"
 		},
 		{
 			"ImportPath": "k8s.io/apimachinery/pkg/util/json",
-			"Rev": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+			"Rev": "706a7f72a784e633e2eb3ba2b9c46fa8f0f1d773"
 		},
 		{
 			"ImportPath": "k8s.io/apimachinery/pkg/util/naming",
-			"Rev": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+			"Rev": "706a7f72a784e633e2eb3ba2b9c46fa8f0f1d773"
 		},
 		{
 			"ImportPath": "k8s.io/apimachinery/pkg/util/net",
-			"Rev": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+			"Rev": "706a7f72a784e633e2eb3ba2b9c46fa8f0f1d773"
 		},
 		{
 			"ImportPath": "k8s.io/apimachinery/pkg/util/runtime",
-			"Rev": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+			"Rev": "706a7f72a784e633e2eb3ba2b9c46fa8f0f1d773"
 		},
 		{
 			"ImportPath": "k8s.io/apimachinery/pkg/util/sets",
-			"Rev": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+			"Rev": "706a7f72a784e633e2eb3ba2b9c46fa8f0f1d773"
 		},
 		{
 			"ImportPath": "k8s.io/apimachinery/pkg/util/validation",
-			"Rev": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+			"Rev": "706a7f72a784e633e2eb3ba2b9c46fa8f0f1d773"
 		},
 		{
 			"ImportPath": "k8s.io/apimachinery/pkg/util/validation/field",
-			"Rev": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+			"Rev": "706a7f72a784e633e2eb3ba2b9c46fa8f0f1d773"
 		},
 		{
 			"ImportPath": "k8s.io/apimachinery/pkg/watch",
-			"Rev": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+			"Rev": "706a7f72a784e633e2eb3ba2b9c46fa8f0f1d773"
 		},
 		{
 			"ImportPath": "k8s.io/apimachinery/third_party/forked/golang/reflect",
-			"Rev": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+			"Rev": "706a7f72a784e633e2eb3ba2b9c46fa8f0f1d773"
 		},
 		{
 			"ImportPath": "k8s.io/component-base/config",
-			"Rev": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+			"Rev": "cbd15b5248fb4916e95fa2ec12ec503630092549"
 		},
 		{
 			"ImportPath": "k8s.io/component-base/config/v1alpha1",
-			"Rev": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+			"Rev": "cbd15b5248fb4916e95fa2ec12ec503630092549"
 		},
 		{
 			"ImportPath": "k8s.io/klog",
