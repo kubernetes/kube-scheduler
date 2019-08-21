@@ -244,7 +244,7 @@
 		},
 		{
 			"ImportPath": "k8s.io/apimachinery",
-			"Rev": "21ddcbbef9e1"
+			"Rev": "2ef880f74d2a"
 		},
 		{
 			"ImportPath": "k8s.io/component-base",
