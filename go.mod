@@ -5,8 +5,8 @@ module k8s.io/kube-scheduler
 go 1.12
 
 require (
-	k8s.io/apimachinery v0.0.0-20191102025618-50aa20a7b23f
-	k8s.io/component-base v0.0.0-20191101230432-fc40a62c56dd
+	k8s.io/apimachinery v0.0.0-20191104232853-7449f4ff0238
+	k8s.io/component-base v0.0.0-20191105030935-0ef5cb666532
 )
 
 replace (
@@ -18,8 +18,8 @@ replace (
 	golang.org/x/sys => golang.org/x/sys v0.0.0-20190209173611-3b5209105503
 	golang.org/x/text => golang.org/x/text v0.3.1-0.20181227161524-e6919f6577db
 	golang.org/x/time => golang.org/x/time v0.0.0-20161028155119-f51c12702a4d
-	k8s.io/api => k8s.io/api v0.0.0-20191031065753-b19d8caf39be
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20191102025618-50aa20a7b23f
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20191101230044-e9766ae82012
-	k8s.io/component-base => k8s.io/component-base v0.0.0-20191101230432-fc40a62c56dd
+	k8s.io/api => k8s.io/api v0.0.0-20191105025951-7aa4c14eac98
+	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20191104232853-7449f4ff0238
+	k8s.io/client-go => k8s.io/client-go v0.0.0-20191105030321-52092c3c67fa
+	k8s.io/component-base => k8s.io/component-base v0.0.0-20191105030935-0ef5cb666532
 )
