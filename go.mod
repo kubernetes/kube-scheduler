@@ -6,17 +6,17 @@ go 1.13
 
 require (
 	github.com/google/go-cmp v0.4.0
-	k8s.io/api v0.0.0-20200515122051-6a16455650b6
-	k8s.io/apimachinery v0.0.0-20200515121839-97fb445e5c49
-	k8s.io/component-base v0.0.0-20200515123003-0fe55196dda6
+	k8s.io/api v0.0.0-20200517042100-2490600588fc
+	k8s.io/apimachinery v0.0.0-20200517041843-561e5e9b265b
+	k8s.io/component-base v0.0.0-20200517042948-89c8525861a7
 	sigs.k8s.io/yaml v1.2.0
 )
 
 replace (
 	golang.org/x/sys => golang.org/x/sys v0.0.0-20190813064441-fde4db37ae7a // pinned to release-branch.go1.13
 	golang.org/x/tools => golang.org/x/tools v0.0.0-20190821162956-65e3620a7ae7 // pinned to release-branch.go1.13
-	k8s.io/api => k8s.io/api v0.0.0-20200515122051-6a16455650b6
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20200515121839-97fb445e5c49
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20200515122352-806d15d65454
-	k8s.io/component-base => k8s.io/component-base v0.0.0-20200515123003-0fe55196dda6
+	k8s.io/api => k8s.io/api v0.0.0-20200517042100-2490600588fc
+	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20200517041843-561e5e9b265b
+	k8s.io/client-go => k8s.io/client-go v0.0.0-20200517042358-3d5c80942cce
+	k8s.io/component-base => k8s.io/component-base v0.0.0-20200517042948-89c8525861a7
 )
