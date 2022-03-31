@@ -6,14 +6,14 @@ go 1.18
 
 require (
 	github.com/google/go-cmp v0.5.5
-	k8s.io/api v0.0.0-20220505102950-a2ee8c7e6bdc
-	k8s.io/apimachinery v0.0.0-20220505102722-5f6d692e6a78
-	k8s.io/component-base v0.0.0-20220505103914-99e6e4beb802
+	k8s.io/api v0.0.0
+	k8s.io/apimachinery v0.0.0
+	k8s.io/component-base v0.0.0
 	sigs.k8s.io/yaml v1.2.0
 )
 
 require (
-	github.com/go-logr/logr v1.2.0 // indirect
+	github.com/go-logr/logr v1.2.3 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/google/gofuzz v1.1.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
@@ -31,8 +31,9 @@ require (
 )
 
 replace (
-	k8s.io/api => k8s.io/api v0.0.0-20220505102950-a2ee8c7e6bdc
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20220505102722-5f6d692e6a78
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20220505103316-c0ab12afa7f1
-	k8s.io/component-base => k8s.io/component-base v0.0.0-20220505103914-99e6e4beb802
+	k8s.io/api => ../api
+	k8s.io/apimachinery => ../apimachinery
+	k8s.io/client-go => ../client-go
+	k8s.io/component-base => ../component-base
+	k8s.io/kube-scheduler => ../kube-scheduler
 )
