@@ -6,9 +6,9 @@ go 1.21
 
 require (
 	github.com/google/go-cmp v0.6.0
-	k8s.io/api v0.0.0-20240110173429-a48c0a49b1dc
-	k8s.io/apimachinery v0.0.0-20240110172605-dc7e034c8647
-	k8s.io/component-base v0.0.0-20240110180938-aca7dbbf0e34
+	k8s.io/api v0.29.2
+	k8s.io/apimachinery v0.29.2
+	k8s.io/component-base v0.29.2
 	sigs.k8s.io/yaml v1.3.0
 )
 
@@ -30,8 +30,8 @@ require (
 )
 
 replace (
-	k8s.io/api => k8s.io/api v0.0.0-20240110173429-a48c0a49b1dc
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20240110172605-dc7e034c8647
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20240110175813-baea19d6e81c
-	k8s.io/component-base => k8s.io/component-base v0.0.0-20240110180938-aca7dbbf0e34
+	k8s.io/api => k8s.io/api v0.29.2
+	k8s.io/apimachinery => k8s.io/apimachinery v0.29.2
+	k8s.io/client-go => k8s.io/client-go v0.29.2
+	k8s.io/component-base => k8s.io/component-base v0.29.2
 )
