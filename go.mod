@@ -6,9 +6,9 @@ go 1.22.0
 
 require (
 	github.com/google/go-cmp v0.6.0
-	k8s.io/api v0.0.0-20240306165540-05aa4bceed70
-	k8s.io/apimachinery v0.0.0-20240306164812-cbfe0a1feaa5
-	k8s.io/component-base v0.0.0-20240306172020-b0a6e40497ae
+	k8s.io/api v0.30.0-rc.0
+	k8s.io/apimachinery v0.30.0-rc.0
+	k8s.io/component-base v0.30.0-rc.0
 	sigs.k8s.io/yaml v1.3.0
 )
 
@@ -28,3 +28,11 @@ require (
 	sigs.k8s.io/json v0.0.0-20221116044647-bc3834ca7abd // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.4.1 // indirect
 )
+
+replace k8s.io/apimachinery => k8s.io/apimachinery v0.30.0-rc.0
+
+replace k8s.io/component-base => k8s.io/component-base v0.30.0-rc.0
+
+replace k8s.io/api => k8s.io/api v0.30.0-rc.0
+
+replace k8s.io/client-go => k8s.io/client-go v0.30.0-rc.0
