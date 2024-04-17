@@ -6,9 +6,9 @@ go 1.21
 
 require (
 	github.com/google/go-cmp v0.6.0
-	k8s.io/api v0.0.0-20240404161350-448db12cecfb
-	k8s.io/apimachinery v0.0.0-20240404161013-3e7c65a7bc4d
-	k8s.io/component-base v0.0.0-20240404163600-1c2da834f8fb
+	k8s.io/api v0.29.4
+	k8s.io/apimachinery v0.29.4
+	k8s.io/component-base v0.29.4
 	sigs.k8s.io/yaml v1.3.0
 )
 
