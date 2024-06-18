@@ -6,9 +6,9 @@ go 1.22.0
 
 require (
 	github.com/google/go-cmp v0.6.0
-	k8s.io/api v0.0.0-20240611003639-590e50434bf1
-	k8s.io/apimachinery v0.0.0-20240611003333-1a6a62ad18e9
-	k8s.io/component-base v0.0.0-20240611005304-e4e29391883e
+	k8s.io/api v0.31.0-alpha.2
+	k8s.io/apimachinery v0.31.0-alpha.2
+	k8s.io/component-base v0.31.0-alpha.2
 	sigs.k8s.io/yaml v1.4.0
 )
 
