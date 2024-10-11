@@ -8,9 +8,9 @@ godebug default=go1.23
 
 require (
 	github.com/google/go-cmp v0.6.0
-	k8s.io/api v0.0.0-20241011135351-b2e7d7303452
-	k8s.io/apimachinery v0.0.0-20241011134852-2561a8113cd8
-	k8s.io/component-base v0.0.0-20241011141531-173435b0e8f9
+	k8s.io/api v0.0.0-20241011135352-a432ebea6002
+	k8s.io/apimachinery v0.0.0-20241011134855-ee6d9667b400
+	k8s.io/component-base v0.0.0-20241011141534-5f571d319450
 	sigs.k8s.io/yaml v1.4.0
 )
 
@@ -24,8 +24,8 @@ require (
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
-	golang.org/x/net v0.28.0 // indirect
-	golang.org/x/text v0.17.0 // indirect
+	golang.org/x/net v0.30.0 // indirect
+	golang.org/x/text v0.19.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	k8s.io/klog/v2 v2.130.1 // indirect
