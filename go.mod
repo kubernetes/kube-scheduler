@@ -8,9 +8,9 @@ godebug default=go1.23
 
 require (
 	github.com/google/go-cmp v0.6.0
-	k8s.io/api v0.0.0-20241018042523-2be23f6c5a71
-	k8s.io/apimachinery v0.0.0-20241018042225-cfee47580787
-	k8s.io/component-base v0.0.0-20241018044032-28853230c294
+	k8s.io/api v0.0.0
+	k8s.io/apimachinery v0.0.0
+	k8s.io/component-base v0.0.0
 	sigs.k8s.io/yaml v1.4.0
 )
 
@@ -27,9 +27,15 @@ require (
 	golang.org/x/net v0.30.0 // indirect
 	golang.org/x/text v0.19.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
-	gopkg.in/yaml.v2 v2.4.0 // indirect
 	k8s.io/klog/v2 v2.130.1 // indirect
 	k8s.io/utils v0.0.0-20240711033017-18e509b52bc8 // indirect
 	sigs.k8s.io/json v0.0.0-20241010143419-9aa6b5e7a4b3 // indirect
-	sigs.k8s.io/structured-merge-diff/v4 v4.4.1 // indirect
+	sigs.k8s.io/structured-merge-diff/v4 v4.4.2 // indirect
+)
+
+replace (
+	k8s.io/api => ../api
+	k8s.io/apimachinery => ../apimachinery
+	k8s.io/client-go => ../client-go
+	k8s.io/component-base => ../component-base
 )
