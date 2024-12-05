@@ -12,9 +12,9 @@ godebug winsymlink=0
 
 require (
 	github.com/google/go-cmp v0.6.0
-	k8s.io/api v0.0.0-20241205022319-ea815d578ce0
-	k8s.io/apimachinery v0.0.0-20241205021851-220d7c35f6db
-	k8s.io/component-base v0.0.0-20241205024250-af0d53b80315
+	k8s.io/api v0.32.0-rc.2
+	k8s.io/apimachinery v0.32.0-rc.2
+	k8s.io/component-base v0.32.0-rc.2
 	sigs.k8s.io/yaml v1.4.0
 )
 
