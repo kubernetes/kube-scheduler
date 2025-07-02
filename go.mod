@@ -10,7 +10,7 @@ require (
 	github.com/google/go-cmp v0.7.0
 	k8s.io/api v0.0.0-20250702170451-bfa25161ab14
 	k8s.io/apimachinery v0.0.0-20250702170156-7548d4da2f38
-	k8s.io/component-base v0.0.0-20250702172159-a7fbca963794
+	k8s.io/component-base v0.0.0-20250702211828-4643692dd643
 	k8s.io/klog/v2 v2.130.1
 	sigs.k8s.io/yaml v1.5.0
 )
