@@ -8,10 +8,10 @@ godebug default=go1.24
 
 require (
 	github.com/google/go-cmp v0.7.0
-	k8s.io/api v0.0.0-20250724104226-1560b8c850a7
-	k8s.io/apimachinery v0.0.0-20250723005633-58c4eb072ebf
-	k8s.io/client-go v0.0.0-20250724145627-753cfe181182
-	k8s.io/component-base v0.0.0-20250724065244-07ee182722a1
+	k8s.io/api v0.0.0-20250724224534-f2279712f874
+	k8s.io/apimachinery v0.0.0-20250724224258-50e39b11cd32
+	k8s.io/client-go v0.0.0-20250724224906-d4f2d5b8ccf7
+	k8s.io/component-base v0.0.0-20250724225857-f959b0363667
 	k8s.io/klog/v2 v2.130.1
 	sigs.k8s.io/yaml v1.5.0
 )
@@ -19,7 +19,7 @@ require (
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/emicklei/go-restful/v3 v3.12.2 // indirect
-	github.com/fxamacker/cbor/v2 v2.8.0 // indirect
+	github.com/fxamacker/cbor/v2 v2.9.0 // indirect
 	github.com/go-logr/logr v1.4.2 // indirect
 	github.com/go-openapi/jsonpointer v0.21.0 // indirect
 	github.com/go-openapi/jsonreference v0.20.2 // indirect
