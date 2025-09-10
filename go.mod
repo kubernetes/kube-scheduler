@@ -32,3 +32,13 @@ require (
 	sigs.k8s.io/randfill v1.0.0 // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.6.0 // indirect
 )
+
+replace k8s.io/apiserver => k8s.io/apiserver v0.0.0-20250409072830-345c8cfd3f66
+
+replace k8s.io/component-helpers => k8s.io/component-helpers v0.0.0-20250411023846-d3fba0444e74
+
+replace k8s.io/dynamic-resource-allocation => k8s.io/dynamic-resource-allocation v0.0.0-20250411042319-b4a353b15f00
+
+replace k8s.io/kms => k8s.io/kms v0.0.0-20250411024139-18052dfff32e
+
+replace k8s.io/kubelet => k8s.io/kubelet v0.0.0-20250411035309-c6b3504b3800
