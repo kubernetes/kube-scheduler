@@ -12,7 +12,7 @@ require (
 	k8s.io/apimachinery v0.0.0-20251104194212-729c13d7df38
 	k8s.io/client-go v0.0.0-20251105163311-7d09f53b04bd
 	k8s.io/component-base v0.0.0-20251105043606-09c454e1f74b
-	k8s.io/dynamic-resource-allocation v0.0.0-20251105012842-42e21234a6d9
+	k8s.io/dynamic-resource-allocation v0.0.0-20251106012030-f303377c441f
 	k8s.io/klog/v2 v2.130.1
 	sigs.k8s.io/yaml v1.6.0
 )
