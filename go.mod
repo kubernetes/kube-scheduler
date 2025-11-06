@@ -10,7 +10,7 @@ require (
 	github.com/google/go-cmp v0.7.0
 	k8s.io/api v0.0.0-20251106122822-7a2b40e5cc3d
 	k8s.io/apimachinery v0.0.0-20251104194212-729c13d7df38
-	k8s.io/client-go v0.0.0-20251106123251-823f3a75f494
+	k8s.io/client-go v0.0.0-20251106123256-0e6fc04326d2
 	k8s.io/component-base v0.0.0-20251105043606-09c454e1f74b
 	k8s.io/component-helpers v0.0.0-20251106124553-0e2bf40485ce
 	k8s.io/dynamic-resource-allocation v0.0.0-20251106133219-767b0d3d2882
@@ -75,3 +75,5 @@ require (
 	sigs.k8s.io/randfill v1.0.0 // indirect
 	sigs.k8s.io/structured-merge-diff/v6 v6.3.0 // indirect
 )
+
+replace k8s.io/api => k8s.io/api v0.0.0-20251106104455-3e68c164a918
