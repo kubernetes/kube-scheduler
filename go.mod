@@ -11,9 +11,9 @@ require (
 	k8s.io/api v0.0.0-20251218062648-50474f4a1619
 	k8s.io/apimachinery v0.0.0-20251218062153-94056eccfb12
 	k8s.io/client-go v0.0.0-20251218063306-1aef261f0ad5
-	k8s.io/component-base v0.0.0-20251204225730-8cb15f10375f
+	k8s.io/component-base v0.0.0-20251218143937-776ef6f15e6f
 	k8s.io/component-helpers v0.0.0-20251204230024-d853346140cf
-	k8s.io/dynamic-resource-allocation v0.0.0-20251218152722-038a3ee41b75
+	k8s.io/dynamic-resource-allocation v0.0.0-20251218152723-3151a6350ba1
 	k8s.io/klog/v2 v2.130.1
 	sigs.k8s.io/yaml v1.6.0
 )
@@ -68,7 +68,7 @@ require (
 	gopkg.in/evanphx/json-patch.v4 v4.13.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/apiserver v0.0.0-20251218144801-855be38953bd // indirect
+	k8s.io/apiserver v0.0.0-20251218144803-947c15821c59 // indirect
 	k8s.io/kube-openapi v0.0.0-20250910181357-589584f1c912 // indirect
 	k8s.io/utils v0.0.0-20251002143259-bc988d571ff4 // indirect
 	sigs.k8s.io/json v0.0.0-20250730193827-2d320260d730 // indirect
