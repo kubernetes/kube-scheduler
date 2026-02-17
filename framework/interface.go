@@ -749,6 +749,24 @@ type SignPlugin interface {
 	SignPod(ctx context.Context, pod *v1.Pod) ([]SignFragment, *Status)
 }
 
+// GeneratePlacementsResult represents the result of the PlacementGeneratePlugin.
+type GeneratePlacementsResult struct {
+	// Placements is the set of placements that the plugin wants to partition the resources into.
+	// The partitions can overlap.
+	//
+	// To represent no valid partitions, set the array to nil or empty.
+	Placements []*Placement
+}
+
+// PlacementGeneratePlugin is an interface for plugins that generate candidate Placements.
+type PlacementGeneratePlugin interface {
+	Plugin
+
+	// GeneratePlacements generates a list of potential Placements for the given PodGroup within the parent placement.
+	// Each Placement represents a candidate set of resources, e.g., nodes matching a selector.
+	GeneratePlacements(ctx context.Context, state PodGroupCycleState, podGroup PodGroupInfo, parentPlacement *Placement) (*GeneratePlacementsResult, *Status)
+}
+
 // PlacementScore stores result of a placement score plugin to be later used for normalization.
 type PlacementScore struct {
 	// Placement is the placement for which the score was computed
