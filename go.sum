@@ -162,8 +162,8 @@ k8s.io/apiserver v0.0.0-20260305045022-ec6076a15a51 h1:0RQlBcG5m8qgWcKahNswEEjd9
 k8s.io/apiserver v0.0.0-20260305045022-ec6076a15a51/go.mod h1:NP4n1Bq//4AWh+A7rJ8infsIkeC5CrIFRrs/rIp0L2A=
 k8s.io/client-go v0.0.0-20260305042603-a72ad3ccbc80 h1:xURw8hkf7bC3bSHcyzvxytvIVqSNldFZqOis6FQ7zNI=
 k8s.io/client-go v0.0.0-20260305042603-a72ad3ccbc80/go.mod h1:UyQvrJ8ZAg8ShWqb+qjbtKN3vAksuOWvDDBZ33STfcE=
-k8s.io/component-base v0.0.0-20260305043959-c8aad7eef36f h1:LzFMy4el5DzNV8AROPMPA1OeXNI92go+H6RnKRRR5gE=
-k8s.io/component-base v0.0.0-20260305043959-c8aad7eef36f/go.mod h1:EscEzP3P0PdEF6lGwFWaO+5zN7ML3s75fAgLTq/4vxc=
+k8s.io/component-base v0.0.0-20260305083031-690bb008380d h1:Rgj3chuD2IPUN1avwABQ40+2sXG076Tv64hu7/26lL8=
+k8s.io/component-base v0.0.0-20260305083031-690bb008380d/go.mod h1:EscEzP3P0PdEF6lGwFWaO+5zN7ML3s75fAgLTq/4vxc=
 k8s.io/component-helpers v0.0.0-20260305044151-072ecc581753 h1:dzqgCc40gWkblPqwCYH3r5vRZSEh1BW4MDzTV/cBJxs=
 k8s.io/component-helpers v0.0.0-20260305044151-072ecc581753/go.mod h1:WFkQipd6xWxcoq5ANRSvm5G2Ba8bDNXPMLuXsqQe/d8=
 k8s.io/dynamic-resource-allocation v0.0.0-20260305054337-282423c05f6a h1:DLvOHwbOrpIKlNplqu2/IjZGnh2qL2rSjWNxHLiHCdc=
