@@ -89,6 +89,10 @@ type CycleState interface {
 	// Clone creates a copy of CycleState and returns its pointer. Clone returns
 	// nil if the context being cloned is nil.
 	Clone() CycleState
+	// IsPodGroupSchedulingCycle returns true if this cycle is a pod group scheduling cycle.
+	IsPodGroupSchedulingCycle() bool
+	// SetPodGroupSchedulingCycle sets whether this cycle is a pod group scheduling cycle or not.
+	SetPodGroupSchedulingCycle(bool)
 }
 
 // PodGroupCycleState provides a mechanism for plugins that operate on pod groups to store and retrieve arbitrary data.
