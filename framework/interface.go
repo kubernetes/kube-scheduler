@@ -22,6 +22,7 @@ import (
 	"context"
 	"errors"
 	"math"
+	"slices"
 	"strings"
 	"time"
 
@@ -192,6 +193,11 @@ func (s *Status) IsRejected() bool {
 	return code == Unschedulable || code == UnschedulableAndUnresolvable || code == Pending
 }
 
+// IsError returns true if and only if "Status" is non-nil and its Code is "Error".
+func (s *Status) IsError() bool {
+	return s.Code() == Error
+}
+
 // AsError returns nil if the status is a success, a wait or a skip; otherwise returns an "error" object
 // with a concatenated message on reasons of the Status.
 func (s *Status) AsError() error {
@@ -224,6 +230,16 @@ func (s *Status) Equal(x *Status) bool {
 
 func (s *Status) String() string {
 	return s.Message()
+}
+
+// Clone clones the entire Status and returns a copy.
+func (s *Status) Clone() *Status {
+	return &Status{
+		code:    s.code,
+		reasons: slices.Clone(s.reasons),
+		err:     s.err,
+		plugin:  s.plugin,
+	}
 }
 
 // NewStatus makes a Status out of the given arguments and returns its pointer.
