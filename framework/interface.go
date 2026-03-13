@@ -885,8 +885,8 @@ type Handle interface {
 	// PodGroupManager can be used to provide workload-aware scheduling.
 	PodGroupManager() PodGroupManager
 
-	// Sign a pod.
-	SignPod(ctx context.Context, pod *v1.Pod, recordPluginStats bool) PodSignature
+	// SignPod creates a PodSignature for a pod.
+	SignPod(ctx context.Context, pod *v1.Pod) PodSignature
 }
 
 // Parallelizer helps run scheduling operations in parallel chunks where possible, to improve performance and CPU utilization.
