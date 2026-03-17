@@ -90,8 +90,12 @@ type CycleState interface {
 	// nil if the context being cloned is nil.
 	Clone() CycleState
 	// IsPodGroupSchedulingCycle returns true if this cycle is a pod group scheduling cycle.
+	// If set to false, it means that the pod referencing this CycleState either passed the pod group cycle
+	// or doesn't belong to any pod group.
+	// This field can only be set to true when GenericWorkload feature flag is enabled.
 	IsPodGroupSchedulingCycle() bool
 	// SetPodGroupSchedulingCycle sets whether this cycle is a pod group scheduling cycle or not.
+	// This should be only used when GenericWorkload feature flag is enabled.
 	SetPodGroupSchedulingCycle(bool)
 }
 
