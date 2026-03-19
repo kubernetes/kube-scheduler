@@ -105,25 +105,20 @@ type ResourceClaimTracker interface {
 	GatherAllocatedState() (*structured.AllocatedState, error)
 
 	// SignalClaimPendingAllocation signals to the tracker that the given ResourceClaim will be allocated via an API call in the
-	// binding phase. This change is immediately reflected in the result of List() and the other accessors.
+	// binding phase, therefore the given ResourceClaim must be non-nil and have a non-nil Status.Allocation.
+	// If the claim already has a pending allocation, then the allocation becomes shared. The same number of SignalClaimPendingAllocation() callers
+	// for a given claimUID is expected to eventually call MaybeRemoveClaimPendingAllocation() for that claimUID.
+	// This change is immediately reflected in the result of List() and the other accessors.
 	SignalClaimPendingAllocation(claimUID types.UID, allocatedClaim *resourceapi.ResourceClaim) error
-	// GetPendingAllocation answers whether a given claim has a pending allocation during the binding phase. It can be used to avoid
+	// ClaimHasPendingAllocation answers whether a given claim has a pending allocation during the binding phase. It can be used to avoid
 	// race conditions in subsequent scheduling phases.
-	GetPendingAllocation(claimUID types.UID) (*resourceapi.AllocationResult, bool)
+	GetPendingAllocation(claimUID types.UID) *resourceapi.AllocationResult
 	// MaybeRemoveClaimPendingAllocation might remove the pending allocation for the given ResourceClaim from the tracker if any was signaled via
-	// SignalClaimPendingAllocation(). When a pending allocation is `shareable`, it removes the pending allocation only when
-	// no other pods are still using that pending allocation (per AddSharedClaimPendingAllocation and
-	// RemoveSharedClaimPendingAllocation). When a pending allocation is not shareable, it always removes the pending
-	// allocation as long as one exists. Returns whether there was a pending allocation and it was removed.
-	// List() and the other accessors immediately stop reflecting the pending allocation in the results.
-	MaybeRemoveClaimPendingAllocation(claimUID types.UID, shareable bool) (deleted bool)
-
-	// AddSharedClaimPendingAllocation increments the number of active sharers
-	// of the given ResourceClaim.
-	AddSharedClaimPendingAllocation(claimUID types.UID, allocatedClaim *resourceapi.ResourceClaim) error
-	// RemoveSharedClaimPendingAllocation decrements the number of active sharers
-	// of the given ResourceClaim.
-	RemoveSharedClaimPendingAllocation(claimUID types.UID, allocatedClaim *resourceapi.ResourceClaim) error
+	// SignalClaimPendingAllocation(). When `forceRemove` is true, it always removes the pending allocation. Otherwise, it removes the pending
+	// allocation only when no other pods are still using that pending allocation (from SignalClaimPendingAllocation and AcquirePendingAllocation).
+	// Returns whether there was a pending allocation and it was removed.
+	// List() and the other accessors immediately stop reflecting the pending allocation in the results when the pending allocation is removed.
+	MaybeRemoveClaimPendingAllocation(claimUID types.UID, forceRemove bool) (deleted bool)
 
 	// AssumeClaimAfterAPICall signals to the tracker that an API call modifying the given ResourceClaim was made in the binding phase, and the
 	// changes should be reflected in informers very soon. This change is immediately reflected in the result of List() and the other accessors.
