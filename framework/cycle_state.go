@@ -98,9 +98,12 @@ type CycleState interface {
 	// or doesn't belong to any pod group.
 	// This field can only be set to true when GenericWorkload feature flag is enabled.
 	IsPodGroupSchedulingCycle() bool
-	// SetPodGroupSchedulingCycle sets whether this cycle is a pod group scheduling cycle or not.
+	// GetPodGroupSchedulingCycle gets the cycle state of the PodGroup for a Pod.
 	// This should be only used when GenericWorkload feature flag is enabled.
-	SetPodGroupSchedulingCycle(bool)
+	GetPodGroupSchedulingCycle() PodGroupCycleState
+	// SetPodGroupSchedulingCycle sets the cycle state of the PodGroup for a Pod.
+	// This should be only used when GenericWorkload feature flag is enabled.
+	SetPodGroupSchedulingCycle(PodGroupCycleState)
 }
 
 // PodGroupCycleState provides a mechanism for plugins that operate on pod groups to store and retrieve arbitrary data.
