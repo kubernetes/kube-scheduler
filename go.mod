@@ -10,8 +10,8 @@ require (
 	github.com/google/go-cmp v0.7.0
 	k8s.io/api v0.0.0-20260318235847-50328df638da
 	k8s.io/apimachinery v0.0.0-20260318195418-729062d58854
-	k8s.io/client-go v0.0.0-20260319000516-4c2ee9a3e259
-	k8s.io/component-base v0.0.0-20260318202210-7dbe9af30685
+	k8s.io/client-go v0.0.0-20260319042611-01310540169f
+	k8s.io/component-base v0.0.0-20260319050627-1cffdcd67621
 	k8s.io/component-helpers v0.0.0-20260319002455-22e06253244a
 	k8s.io/dynamic-resource-allocation v0.0.0-20260319012853-41a105db8e64
 	k8s.io/klog/v2 v2.140.0
@@ -68,10 +68,12 @@ require (
 	gopkg.in/evanphx/json-patch.v4 v4.13.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/apiserver v0.0.0-20260318203813-c2576b4b6b22 // indirect
+	k8s.io/apiserver v0.0.0-20260319053415-d745a6363fe0 // indirect
 	k8s.io/kube-openapi v0.0.0-20260317180543-43fb72c5454a // indirect
 	k8s.io/utils v0.0.0-20260210185600-b8788abfbbc2 // indirect
 	sigs.k8s.io/json v0.0.0-20250730193827-2d320260d730 // indirect
 	sigs.k8s.io/randfill v1.0.0 // indirect
 	sigs.k8s.io/structured-merge-diff/v6 v6.3.2 // indirect
 )
+
+replace k8s.io/kubelet => k8s.io/kubelet v0.0.0-20260319073048-af5b21751b3e
