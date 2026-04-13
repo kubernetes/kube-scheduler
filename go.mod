@@ -8,15 +8,15 @@ godebug default=go1.24
 
 require (
 	github.com/google/go-cmp v0.7.0
-	k8s.io/api v0.0.0-20250411021314-16cedc7a66ae
-	k8s.io/apimachinery v0.0.0-20250411020758-955939ffb819
-	k8s.io/component-base v0.0.0-20250411023622-8e0b9e84850c
+	k8s.io/api v0.0.0
+	k8s.io/apimachinery v0.0.0
+	k8s.io/component-base v0.0.0
 	sigs.k8s.io/yaml v1.4.0
 )
 
 require (
 	github.com/fxamacker/cbor/v2 v2.7.0 // indirect
-	github.com/go-logr/logr v1.4.2 // indirect
+	github.com/go-logr/logr v1.4.3 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/kr/text v0.2.0 // indirect
@@ -33,12 +33,9 @@ require (
 	sigs.k8s.io/structured-merge-diff/v4 v4.6.0 // indirect
 )
 
-replace k8s.io/apiserver => k8s.io/apiserver v0.0.0-20250409072830-345c8cfd3f66
-
-replace k8s.io/component-helpers => k8s.io/component-helpers v0.0.0-20250411023846-d3fba0444e74
-
-replace k8s.io/dynamic-resource-allocation => k8s.io/dynamic-resource-allocation v0.0.0-20250411042319-b4a353b15f00
-
-replace k8s.io/kms => k8s.io/kms v0.0.0-20250411024139-18052dfff32e
-
-replace k8s.io/kubelet => k8s.io/kubelet v0.0.0-20250411035309-c6b3504b3800
+replace (
+	k8s.io/api => ../api
+	k8s.io/apimachinery => ../apimachinery
+	k8s.io/client-go => ../client-go
+	k8s.io/component-base => ../component-base
+)
