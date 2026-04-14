@@ -159,16 +159,6 @@ const (
 	// TargetPod resource is associated with the cluster event that gets triggered when an unscheduled pod itself is updated.
 	TargetPod EventResource = "TargetPod"
 
-	// A note about NodeAdd event and UpdateNodeTaint event:
-	// When QHint is disabled, NodeAdd often isn't worked expectedly because of the internal feature called preCheck.
-	// It's definitely not something expected for plugin developers,
-	// and registering UpdateNodeTaint event is the only mitigation for now.
-	// So, kube-scheduler registers UpdateNodeTaint event for plugins that has NodeAdded event, but don't have UpdateNodeTaint event.
-	// It has a bad impact for the requeuing efficiency though, a lot better than some Pods being stuck in the
-	// unschedulable pod pool.
-	// This problematic preCheck feature is disabled when QHint is enabled,
-	// and eventually will be removed along with QHint graduation.
-	// See: https://github.com/kubernetes/kubernetes/issues/110175
 	Node                  EventResource = "Node"
 	PersistentVolume      EventResource = "PersistentVolume"
 	PersistentVolumeClaim EventResource = "PersistentVolumeClaim"
