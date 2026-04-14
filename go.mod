@@ -8,12 +8,12 @@ godebug default=go1.25
 
 require (
 	github.com/google/go-cmp v0.7.0
-	k8s.io/api v0.0.0-20251204222945-bbcbaa8f8665
-	k8s.io/apimachinery v0.0.0-20260409103420-45398efd5d59
-	k8s.io/client-go v0.0.0-20260304191620-f80003c24087
-	k8s.io/component-base v0.0.0-20260414160532-ea613da60f3d
-	k8s.io/component-helpers v0.0.0-20251204230143-8313d2313006
-	k8s.io/dynamic-resource-allocation v0.0.0-20260414213455-c6a9f4bacab3
+	k8s.io/api v0.0.0-20260414142722-0b2a75e363f7
+	k8s.io/apimachinery v0.0.0-20260414140704-475c94153755
+	k8s.io/client-go v0.0.0-20260414151954-8ebd9bb45e4e
+	k8s.io/component-base v0.0.0-20260414160535-a1519639922f
+	k8s.io/component-helpers v0.0.0-20260414161622-1c7144252830
+	k8s.io/dynamic-resource-allocation v0.0.0-20260414213456-9e3fb971d7cb
 	k8s.io/klog/v2 v2.130.1
 	sigs.k8s.io/yaml v1.6.0
 )
@@ -68,7 +68,7 @@ require (
 	gopkg.in/evanphx/json-patch.v4 v4.13.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/apiserver v0.0.0-20260414165757-665bee2e1789 // indirect
+	k8s.io/apiserver v0.0.0-20260414165759-bab823a36e2c // indirect
 	k8s.io/kube-openapi v0.0.0-20250910181357-589584f1c912 // indirect
 	k8s.io/utils v0.0.0-20251002143259-bc988d571ff4 // indirect
 	sigs.k8s.io/json v0.0.0-20250730193827-2d320260d730 // indirect
