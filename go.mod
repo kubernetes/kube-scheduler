@@ -8,9 +8,9 @@ godebug default=go1.24
 
 require (
 	github.com/google/go-cmp v0.7.0
-	k8s.io/api v0.0.0-20260414142211-4ccbe448876d
-	k8s.io/apimachinery v0.0.0-20260414140158-f091036ab312
-	k8s.io/component-base v0.0.0-20260414160230-686d2cdb0770
+	k8s.io/api v0.33.11
+	k8s.io/apimachinery v0.33.11
+	k8s.io/component-base v0.33.11
 	sigs.k8s.io/yaml v1.4.0
 )
 
@@ -32,13 +32,3 @@ require (
 	sigs.k8s.io/randfill v1.0.0 // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.6.0 // indirect
 )
-
-replace k8s.io/apiserver => k8s.io/apiserver v0.0.0-20260414164736-3968f09f7576
-
-replace k8s.io/component-helpers => k8s.io/component-helpers v0.0.0-20260414161422-b5028b193c02
-
-replace k8s.io/dynamic-resource-allocation => k8s.io/dynamic-resource-allocation v0.0.0-20260414213246-5917e17f9a88
-
-replace k8s.io/kms => k8s.io/kms v0.0.0-20250411024139-18052dfff32e
-
-replace k8s.io/kubelet => k8s.io/kubelet v0.0.0-20260414194516-08d46010274b
