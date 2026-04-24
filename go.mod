@@ -8,12 +8,12 @@ godebug default=go1.26
 
 require (
 	github.com/google/go-cmp v0.7.0
-	k8s.io/api v0.0.0-20260424110828-103005c29633
-	k8s.io/apimachinery v0.0.0-20260424110436-5138150d0bbc
-	k8s.io/client-go v0.0.0-20260424111355-1f2893e6110a
-	k8s.io/component-base v0.0.0-20260424112635-fb93ad6f1763
-	k8s.io/component-helpers v0.0.0-20260424112837-621ed97ad2f4
-	k8s.io/dynamic-resource-allocation v0.0.0-20260424122850-f346d147c9ea
+	k8s.io/api v0.0.0-20260424110830-aca5bee66d09
+	k8s.io/apimachinery v0.0.0-20260424110437-f75bcf7bc970
+	k8s.io/client-go v0.0.0-20260424111358-5834c79c33cb
+	k8s.io/component-base v0.0.0-20260424112638-91c34d95ebe1
+	k8s.io/component-helpers v0.0.0-20260424112838-7c9f445354e8
+	k8s.io/dynamic-resource-allocation v0.0.0-20260424122852-eac979090769
 	k8s.io/klog/v2 v2.140.0
 	sigs.k8s.io/yaml v1.6.0
 )
@@ -26,7 +26,7 @@ require (
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/emicklei/go-restful/v3 v3.13.0 // indirect
-	github.com/fxamacker/cbor/v2 v2.9.0 // indirect
+	github.com/fxamacker/cbor/v2 v2.9.1 // indirect
 	github.com/go-logr/logr v1.4.3 // indirect
 	github.com/go-openapi/jsonpointer v0.21.0 // indirect
 	github.com/go-openapi/jsonreference v0.20.2 // indirect
@@ -67,7 +67,7 @@ require (
 	gopkg.in/evanphx/json-patch.v4 v4.13.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/apiserver v0.0.0-20260424113702-a640ccbbd905 // indirect
+	k8s.io/apiserver v0.0.0-20260424113704-96785f982459 // indirect
 	k8s.io/kube-openapi v0.0.0-20260317180543-43fb72c5454a // indirect
 	k8s.io/utils v0.0.0-20260210185600-b8788abfbbc2 // indirect
 	sigs.k8s.io/json v0.0.0-20250730193827-2d320260d730 // indirect
