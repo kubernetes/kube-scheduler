@@ -8,12 +8,12 @@ godebug default=go1.26
 
 require (
 	github.com/google/go-cmp v0.7.0
-	k8s.io/api v0.0.0-20260721070333-bfcbbbe7918a
-	k8s.io/apimachinery v0.0.0-20260720185622-0de14ec6eb6a
-	k8s.io/client-go v0.0.0-20260721111254-634d6475dc82
+	k8s.io/api v0.0.0-20260721190407-2399a6b85dfe
+	k8s.io/apimachinery v0.0.0-20260721185636-e15ad7c70234
+	k8s.io/client-go v0.0.0-20260721191421-8b5606d75216
 	k8s.io/component-base v0.0.0-20260721152320-ea1331da5b49
-	k8s.io/component-helpers v0.0.0-20260720233820-87a1869a56c3
-	k8s.io/dynamic-resource-allocation v0.0.0-20260721172010-a585364f48fe
+	k8s.io/component-helpers v0.0.0-20260721194306-59cb63e6967a
+	k8s.io/dynamic-resource-allocation v0.0.0-20260721214140-1a1a2f71111c
 	k8s.io/klog/v2 v2.140.0
 	sigs.k8s.io/yaml v1.6.0
 )
