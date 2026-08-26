@@ -8,12 +8,12 @@ godebug default=go1.26
 
 require (
 	github.com/google/go-cmp v0.7.0
-	k8s.io/api v0.0.0-20260728020008-a9c6d6c7c5a6
-	k8s.io/apimachinery v0.0.0-20260826191425-601392793db0
-	k8s.io/client-go v0.0.0-20260826210224-5f370f208855
-	k8s.io/component-base v0.0.0-20260721193929-349fbe06359c
-	k8s.io/component-helpers v0.0.0-20260724062130-1961876b9c57
-	k8s.io/dynamic-resource-allocation v0.0.0-20260826223154-2c184f253527
+	k8s.io/api v0.0.0-20260826205612-d92971d9021c
+	k8s.io/apimachinery v0.0.0-20260826205134-80fe8c5dbeac
+	k8s.io/client-go v0.0.0-20260826210227-b6af67b459df
+	k8s.io/component-base v0.0.0-20260826211822-85d24923e09f
+	k8s.io/component-helpers v0.0.0-20260826212041-da4932a697ab
+	k8s.io/dynamic-resource-allocation v0.0.0-20260826223156-f8fb609a1989
 	k8s.io/klog/v2 v2.140.0
 	sigs.k8s.io/yaml v1.6.0
 )
@@ -72,10 +72,10 @@ require (
 	golang.org/x/time v0.15.0 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20260526163538-3dc84a4a5aaa // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20260526163538-3dc84a4a5aaa // indirect
-	google.golang.org/protobuf v1.36.12-0.20260120151049-f2248ac996af // indirect
+	google.golang.org/protobuf v1.36.12 // indirect
 	gopkg.in/evanphx/json-patch.v4 v4.13.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
-	k8s.io/apiserver v0.0.0-20260826213053-20ed560c7cbb // indirect
+	k8s.io/apiserver v0.0.0-20260826213055-7dd76158e28f // indirect
 	k8s.io/kube-openapi v0.0.0-20260721132016-d427ff9ee9ad // indirect
 	k8s.io/utils v0.0.0-20260626114624-be93311217bd // indirect
 	sigs.k8s.io/json v0.0.0-20250730193827-2d320260d730 // indirect
