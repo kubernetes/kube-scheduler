@@ -29,6 +29,7 @@ import (
 	"k8s.io/apimachinery/pkg/util/sets"
 	ndf "k8s.io/component-helpers/nodedeclaredfeatures"
 	"k8s.io/klog/v2"
+	"k8s.io/kube-scheduler/util"
 )
 
 // ActionType is an integer to represent one type of resource change.
@@ -788,4 +789,107 @@ func PodGroupKey(namespace, name string) EntityKey {
 // CompositePodGroupKey returns the key for a composite pod group.
 func CompositePodGroupKey(namespace, name string) EntityKey {
 	return EntityKey{Type: CompositePodGroupKeyType, Namespace: namespace, Name: name}
+}
+
+// GenericPodGroup is a wrapper around either a PodGroup or a CompositePodGroup API object,
+// providing a unified interface for operations on PodGroup objects.
+type GenericPodGroup struct {
+	// PodGroup is a PodGroup API object.
+	PodGroup *schedulingv1beta1.PodGroup
+	// CompositePodGroup is a CompositePodGroup API object.
+	// It can be set only when CompositePodGroup feature is enabled.
+	CompositePodGroup *schedulingv1alpha3.CompositePodGroup
+}
+
+// NewGenericPodGroup returns a GenericPodGroup for a PodGroup.
+func NewGenericPodGroup(pg *schedulingv1beta1.PodGroup) *GenericPodGroup {
+	return &GenericPodGroup{PodGroup: pg}
+}
+
+// NewGenericCompositePodGroup returns a GenericPodGroup for a CompositePodGroup.
+func NewGenericCompositePodGroup(cpg *schedulingv1alpha3.CompositePodGroup) *GenericPodGroup {
+	return &GenericPodGroup{CompositePodGroup: cpg}
+}
+
+// GetPodGroup unwraps the underlying PodGroup object. Returns nil if this wraps a CompositePodGroup.
+func (gpg *GenericPodGroup) GetPodGroup() *schedulingv1beta1.PodGroup {
+	return gpg.PodGroup
+}
+
+// GetCompositePodGroup unwraps the underlying CompositePodGroup object. Returns nil if this wraps a PodGroup.
+func (gpg *GenericPodGroup) GetCompositePodGroup() *schedulingv1alpha3.CompositePodGroup {
+	return gpg.CompositePodGroup
+}
+
+// GetName returns a name of the wrapped object.
+func (gpg *GenericPodGroup) GetName() string {
+	if gpg.PodGroup != nil {
+		return gpg.PodGroup.Name
+	}
+	return gpg.CompositePodGroup.Name
+}
+
+// GetNamespace returns a namespace of the wrapped object.
+func (gpg *GenericPodGroup) GetNamespace() string {
+	if gpg.PodGroup != nil {
+		return gpg.PodGroup.Namespace
+	}
+	return gpg.CompositePodGroup.Namespace
+}
+
+// GetType returns the type of the wrapped object.
+func (gpg *GenericPodGroup) GetType() EntityKeyType {
+	if gpg.PodGroup != nil {
+		return PodGroupKeyType
+	}
+	return CompositePodGroupKeyType
+}
+
+// GetKey returns a key of the wrapped object.
+func (gpg *GenericPodGroup) GetKey() EntityKey {
+	if gpg.PodGroup != nil {
+		return PodGroupKey(gpg.PodGroup.Namespace, gpg.PodGroup.Name)
+	}
+	return CompositePodGroupKey(gpg.CompositePodGroup.Namespace, gpg.CompositePodGroup.Name)
+}
+
+// GetParentCompositePodGroupName returns the parent composite pod group name of the GenericPodGroup.
+// This should be used only when the feature feature gate CompositePodGroup is enabled.
+func (gpg *GenericPodGroup) GetParentCompositePodGroupName() *string {
+	if gpg.PodGroup != nil {
+		return gpg.PodGroup.Spec.ParentCompositePodGroupName
+	}
+	return gpg.CompositePodGroup.Spec.ParentCompositePodGroupName
+}
+
+// HasParent returns true if the GenericPodGroup has a parent.
+// This should be used only when the feature feature gate CompositePodGroup is enabled.
+func (gpg *GenericPodGroup) HasParent() bool {
+	return gpg.GetParentCompositePodGroupName() != nil
+}
+
+// GetParentKey returns the parent key of the GenericPodGroup.
+// This should be used only when the feature CompositePodGroup feature gate is enabled.
+func (gpg *GenericPodGroup) GetParentKey() (EntityKey, bool) {
+	parentName := gpg.GetParentCompositePodGroupName()
+	if parentName == nil {
+		return EntityKey{}, false
+	}
+	return CompositePodGroupKey(gpg.GetNamespace(), *parentName), true
+}
+
+// GetPriority returns the priority of the wrapped object.
+func (gpg *GenericPodGroup) GetPriority() int32 {
+	if gpg.PodGroup != nil {
+		return util.PodGroupPriority(gpg.PodGroup)
+	}
+	return util.CompositePodGroupPriority(gpg.CompositePodGroup)
+}
+
+// GetCreationTimestamp returns the creation timestamp of the wrapped object.
+func (gpg *GenericPodGroup) GetCreationTimestamp() time.Time {
+	if gpg.PodGroup != nil {
+		return gpg.PodGroup.CreationTimestamp.Time
+	}
+	return gpg.CompositePodGroup.CreationTimestamp.Time
 }
