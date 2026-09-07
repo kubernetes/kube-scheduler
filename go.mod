@@ -10,10 +10,10 @@ require (
 	github.com/google/go-cmp v0.7.0
 	k8s.io/api v0.0.0-20260904215302-696b79c644cf
 	k8s.io/apimachinery v0.0.0-20260904214832-b16c9f2303a7
-	k8s.io/client-go v0.0.0-20260904215909-498754e35f3c
+	k8s.io/client-go v0.0.0-20260907142626-3386f69e9d6b
 	k8s.io/component-base v0.0.0-20260904221422-f6eb7bda313f
-	k8s.io/component-helpers v0.0.0-20260904221643-4f85b9e09f8b
-	k8s.io/dynamic-resource-allocation v0.0.0-20260904233019-b8bf02591ed4
+	k8s.io/component-helpers v0.0.0-20260907181450-f095f9644351
+	k8s.io/dynamic-resource-allocation v0.0.0-20260907111238-e3dcb66a6c23
 	k8s.io/klog/v2 v2.140.0
 	sigs.k8s.io/yaml v1.6.0
 )
