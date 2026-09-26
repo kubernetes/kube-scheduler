@@ -141,8 +141,8 @@ k8s.io/component-base v0.0.0-20260925221810-cd02325dcddd h1:jjRSX6opNWJYs4kG4FAL
 k8s.io/component-base v0.0.0-20260925221810-cd02325dcddd/go.mod h1:4z+7GbWokOuoGtd86QveHA5hxh6OKSetccZyMC1Dd20=
 k8s.io/component-helpers v0.0.0-20260925222023-272cadd619f8 h1:FBYN07csU++2eDnXhDa4y2j/GPaKWr8Hkj+gP8DKr3I=
 k8s.io/component-helpers v0.0.0-20260925222023-272cadd619f8/go.mod h1:ttqaOLBjbaK46CNtVWGj7dlDHdKTOuklFQ3KP4HgF4U=
-k8s.io/dynamic-resource-allocation v0.0.0-20260925232917-86cc3fac3890 h1:M0HGpL0tFU1UjEKjF32vtVYXcpOCX/daEhhKU1RfOlA=
-k8s.io/dynamic-resource-allocation v0.0.0-20260925232917-86cc3fac3890/go.mod h1:/OWsbCAfumQg8iqfM1z1NO1e3JTs9Y7R1rwsHZ8/f5Y=
+k8s.io/dynamic-resource-allocation v0.0.0-20260926071703-88bf8c753630 h1:dbr1oLCOYrH7TEKw2llqCkfPGSB6nqhh1fgR0ZnfcZc=
+k8s.io/dynamic-resource-allocation v0.0.0-20260926071703-88bf8c753630/go.mod h1:o+xh2do8ux8+77TxMkyNTnOnadAgg3xedBO43Zl80JA=
 k8s.io/klog/v2 v2.140.0 h1:Tf+J3AH7xnUzZyVVXhTgGhEKnFqye14aadWv7bzXdzc=
 k8s.io/klog/v2 v2.140.0/go.mod h1:o+/RWfJ6PwpnFn7OyAG3QnO47BFsymfEfrz6XyYSSp0=
 k8s.io/kube-openapi v0.0.0-20260908163437-c4db2bdfbfe6 h1:V+PvDIOGInpdzdyOIlPU3NhLWHOKPXE8DDIfCVWIgiw=

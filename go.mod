@@ -13,7 +13,7 @@ require (
 	k8s.io/client-go v0.0.0-20260925220338-170311d872c7
 	k8s.io/component-base v0.0.0-20260925221810-cd02325dcddd
 	k8s.io/component-helpers v0.0.0-20260925222023-272cadd619f8
-	k8s.io/dynamic-resource-allocation v0.0.0-20260925232917-86cc3fac3890
+	k8s.io/dynamic-resource-allocation v0.0.0-20260926071703-88bf8c753630
 	k8s.io/klog/v2 v2.140.0
 	sigs.k8s.io/yaml v1.6.0
 )
