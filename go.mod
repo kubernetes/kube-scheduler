@@ -8,12 +8,12 @@ godebug default=go1.27
 
 require (
 	github.com/google/go-cmp v0.7.0
-	k8s.io/api v0.0.0
-	k8s.io/apimachinery v0.0.0
-	k8s.io/client-go v0.0.0
-	k8s.io/component-base v0.0.0
-	k8s.io/component-helpers v0.0.0
-	k8s.io/dynamic-resource-allocation v0.0.0
+	k8s.io/api v0.0.0-20260928175928-c8c26d468973
+	k8s.io/apimachinery v0.0.0-20260929015359-7a3b173f8670
+	k8s.io/client-go v0.0.0-20260928180651-9f57b10584f8
+	k8s.io/component-base v0.0.0-20260928182359-13f8a1410b13
+	k8s.io/component-helpers v0.0.0-20260928182637-806f1f296f7d
+	k8s.io/dynamic-resource-allocation v0.0.0-20260928195132-9d9a3e721b3d
 	k8s.io/klog/v2 v2.140.0
 	sigs.k8s.io/yaml v1.6.0
 )
@@ -60,14 +60,4 @@ require (
 	sigs.k8s.io/structured-merge-diff/v7 v7.0.0 // indirect
 )
 
-replace (
-	k8s.io/api => ../api
-	k8s.io/apimachinery => ../apimachinery
-	k8s.io/apiserver => ../apiserver
-	k8s.io/client-go => ../client-go
-	k8s.io/component-base => ../component-base
-	k8s.io/component-helpers => ../component-helpers
-	k8s.io/dynamic-resource-allocation => ../dynamic-resource-allocation
-	k8s.io/kubelet => ../kubelet
-	k8s.io/streaming => ../streaming
-)
+replace k8s.io/apiserver => k8s.io/apiserver v0.0.0-20260929102856-1fa2e5e81152
