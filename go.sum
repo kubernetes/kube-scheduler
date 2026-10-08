@@ -72,12 +72,12 @@ k8s.io/apimachinery v0.0.0-20261008180943-4bf141d8652d h1:xMUkI8YuBgoYPEQfDosWVL
 k8s.io/apimachinery v0.0.0-20261008180943-4bf141d8652d/go.mod h1:MQngVO4WxGabPsqDi4qUoV3gAzNYTgiY34qMNUGDGo0=
 k8s.io/client-go v0.0.0-20261008185430-4e3fcd1ac226 h1:7tyXJt95Uyw4+7GZ9nRk+imzi2LHL8heE9c/DApKRlk=
 k8s.io/client-go v0.0.0-20261008185430-4e3fcd1ac226/go.mod h1:2v0XsuDBWr/cNAWOQiB0TxM81EWIqyBeIZvmNOvCz44=
-k8s.io/component-base v0.0.0-20261008194719-682b4b0c7a2d h1:QdglrMTymcoDDDe09OnAocKBqe3b4L3LWcbAgi7pHZ8=
-k8s.io/component-base v0.0.0-20261008194719-682b4b0c7a2d/go.mod h1:YQ44w0ANUclQ0gHb+SxQtTMyYX+SG6/UVD44TJDGq9M=
+k8s.io/component-base v0.0.0-20261008194721-2105d667ae4f h1:kOgRKEzHxH9cOkaEP3irL4WS3MiX3p4HYdO4WeVRpEE=
+k8s.io/component-base v0.0.0-20261008194721-2105d667ae4f/go.mod h1:Mm6WWNIUpht1RAezkiZtBZuZfoEF3xBVwkiEc/Vdc9g=
 k8s.io/component-helpers v0.0.0-20261008200116-48e1d0466d9b h1:UnTnBbLtw+1ADYiLAPlhJ+r28EgfDlI4vW/TDqRnwZ4=
 k8s.io/component-helpers v0.0.0-20261008200116-48e1d0466d9b/go.mod h1:lqD1WoF65JfhJ0qSHgQpc9vJ7otZdeKCkBymsHHXiHk=
-k8s.io/dynamic-resource-allocation v0.0.0-20261009012931-5b5b8b768868 h1:iUekrMSbSkjM4puPJBWS1q/WpcFPdqMPFhAuI+IF7cw=
-k8s.io/dynamic-resource-allocation v0.0.0-20261009012931-5b5b8b768868/go.mod h1:nZ7l2O5vvb04F9gHRWHmiqmJPQgyuLjPpuoQ8UndfrY=
+k8s.io/dynamic-resource-allocation v0.0.0-20261009012934-07306a50a089 h1:iOikSFhArwcxcGN66nJIVvv5qYVeKiNU3COwoQXWcnM=
+k8s.io/dynamic-resource-allocation v0.0.0-20261009012934-07306a50a089/go.mod h1:OFEmITZU19XpdYeOsTdC7uAqB328thyxAn/dPHlAjFM=
 k8s.io/klog/v2 v2.140.0 h1:Tf+J3AH7xnUzZyVVXhTgGhEKnFqye14aadWv7bzXdzc=
 k8s.io/klog/v2 v2.140.0/go.mod h1:o+/RWfJ6PwpnFn7OyAG3QnO47BFsymfEfrz6XyYSSp0=
 k8s.io/kube-openapi v0.0.0-20261001230523-97fa35140926 h1:Fe0G8t8FaMDn2lpat0IHu3X9lHrVyGzDxhhCwKXKp28=

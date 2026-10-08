@@ -11,9 +11,9 @@ require (
 	k8s.io/api v0.0.0-20261008183037-6ba00634ddc6
 	k8s.io/apimachinery v0.0.0-20261008180943-4bf141d8652d
 	k8s.io/client-go v0.0.0-20261008185430-4e3fcd1ac226
-	k8s.io/component-base v0.0.0-20261008194719-682b4b0c7a2d
+	k8s.io/component-base v0.0.0-20261008194721-2105d667ae4f
 	k8s.io/component-helpers v0.0.0-20261008200116-48e1d0466d9b
-	k8s.io/dynamic-resource-allocation v0.0.0-20261009012931-5b5b8b768868
+	k8s.io/dynamic-resource-allocation v0.0.0-20261009012934-07306a50a089
 	k8s.io/klog/v2 v2.140.0
 	sigs.k8s.io/yaml v1.6.0
 )
