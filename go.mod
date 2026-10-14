@@ -50,3 +50,5 @@ require (
 	sigs.k8s.io/randfill v1.0.0 // indirect
 	sigs.k8s.io/structured-merge-diff/v7 v7.0.0 // indirect
 )
+
+replace k8s.io/apiserver => k8s.io/apiserver v0.0.0-20261014091312-fb2161a9c659
