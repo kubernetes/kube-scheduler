@@ -8,12 +8,12 @@ godebug default=go1.27
 
 require (
 	github.com/google/go-cmp v0.7.0
-	k8s.io/api v0.0.0-20261030204837-f4451c0ccd1b
-	k8s.io/apimachinery v0.0.0-20261030040554-c0d5737608f6
-	k8s.io/client-go v0.0.0-20261030041624-d88349359817
-	k8s.io/component-base v0.0.0-20261029151141-3e1d13907f62
-	k8s.io/component-helpers v0.0.0-20261029195928-6b7838513d3b
-	k8s.io/dynamic-resource-allocation v0.0.0-20261030135906-064d9a3718d0
+	k8s.io/api v0.0.0
+	k8s.io/apimachinery v0.0.0
+	k8s.io/client-go v0.0.0
+	k8s.io/component-base v0.0.0
+	k8s.io/component-helpers v0.0.0
+	k8s.io/dynamic-resource-allocation v0.0.0
 	k8s.io/klog/v2 v2.140.0
 	sigs.k8s.io/yaml v1.6.0
 )
@@ -36,7 +36,7 @@ require (
 	github.com/x448/float16 v0.8.4 // indirect
 	go.yaml.in/yaml/v2 v2.4.4 // indirect
 	go.yaml.in/yaml/v3 v3.0.5 // indirect
-	golang.org/x/net v0.61.0 // indirect
+	golang.org/x/net v0.62.0 // indirect
 	golang.org/x/oauth2 v0.37.0 // indirect
 	golang.org/x/sys v0.49.0 // indirect
 	golang.org/x/term v0.47.0 // indirect
@@ -52,4 +52,15 @@ require (
 	sigs.k8s.io/structured-merge-diff/v7 v7.0.1 // indirect
 )
 
-replace k8s.io/apiserver => k8s.io/apiserver v0.0.0-20261030212258-42dcc8436faa
+replace (
+	k8s.io/api => ../api
+	k8s.io/apimachinery => ../apimachinery
+	k8s.io/apiserver => ../apiserver
+	k8s.io/client-go => ../client-go
+	k8s.io/component-base => ../component-base
+	k8s.io/component-helpers => ../component-helpers
+	k8s.io/dynamic-resource-allocation => ../dynamic-resource-allocation
+	k8s.io/ktesting => ../ktesting
+	k8s.io/kubelet => ../kubelet
+	k8s.io/streaming => ../streaming
+)
