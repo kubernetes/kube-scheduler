@@ -8,12 +8,12 @@ godebug default=go1.27
 
 require (
 	github.com/google/go-cmp v0.7.0
-	k8s.io/api v0.0.0-20261104204824-f66f7da63bc9
-	k8s.io/apimachinery v0.0.0-20261104084409-3b4ab20b67aa
-	k8s.io/client-go v0.0.0-20261104205411-015a89712696
+	k8s.io/api v0.0.0-20261106004837-762792253b54
+	k8s.io/apimachinery v0.0.0-20261105204426-d601cf6edf0d
+	k8s.io/client-go v0.0.0-20261105205418-a51bfd311e7e
 	k8s.io/component-base v0.0.0-20261103211149-06422decc836
-	k8s.io/component-helpers v0.0.0-20261103211431-bfb4f08b30f2
-	k8s.io/dynamic-resource-allocation v0.0.0-20261103222907-4e6dc3d0cf01
+	k8s.io/component-helpers v0.0.0-20261106010207-cf1b20586f04
+	k8s.io/dynamic-resource-allocation v0.0.0-20261106021009-3e2f06f6f1df
 	k8s.io/klog/v2 v2.140.0
 	sigs.k8s.io/yaml v1.6.0
 )
@@ -52,4 +52,4 @@ require (
 	sigs.k8s.io/structured-merge-diff/v7 v7.0.1 // indirect
 )
 
-replace k8s.io/apiserver => k8s.io/apiserver v0.0.0-20261104010952-d7989d166cd6
+replace k8s.io/apiserver => k8s.io/apiserver v0.0.0-20261106102343-6bb3a74caef4
