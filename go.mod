@@ -52,4 +52,4 @@ require (
 	sigs.k8s.io/structured-merge-diff/v7 v7.0.1 // indirect
 )
 
-replace k8s.io/apiserver => k8s.io/apiserver v0.0.0-20261106102343-6bb3a74caef4
+replace k8s.io/apiserver => k8s.io/apiserver v0.0.0-20261106171101-163468033cc6
