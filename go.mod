@@ -8,12 +8,12 @@ godebug default=go1.27
 
 require (
 	github.com/google/go-cmp v0.7.0
-	k8s.io/api v0.0.0-20261113004937-f4db9c1f58d4
-	k8s.io/apimachinery v0.0.0-20261111054554-99ecaa0b26e4
-	k8s.io/client-go v0.0.0-20261113005538-8fee20b05c94
-	k8s.io/component-base v0.0.0-20261103211149-06422decc836
-	k8s.io/component-helpers v0.0.0-20261110210711-c1bd5f5b0668
-	k8s.io/dynamic-resource-allocation v0.0.0-20261112144156-f1335092ad2c
+	k8s.io/api v0.0.0
+	k8s.io/apimachinery v0.0.0
+	k8s.io/client-go v0.0.0
+	k8s.io/component-base v0.0.0
+	k8s.io/component-helpers v0.0.0
+	k8s.io/dynamic-resource-allocation v0.0.0
 	k8s.io/klog/v2 v2.140.0
 	sigs.k8s.io/yaml v1.6.0
 )
@@ -52,4 +52,15 @@ require (
 	sigs.k8s.io/structured-merge-diff/v7 v7.0.1 // indirect
 )
 
-replace k8s.io/kubelet => k8s.io/kubelet v0.0.0-20261113015519-0bf76e881de5
+replace (
+	k8s.io/api => ../api
+	k8s.io/apimachinery => ../apimachinery
+	k8s.io/apiserver => ../apiserver
+	k8s.io/client-go => ../client-go
+	k8s.io/component-base => ../component-base
+	k8s.io/component-helpers => ../component-helpers
+	k8s.io/dynamic-resource-allocation => ../dynamic-resource-allocation
+	k8s.io/ktesting => ../ktesting
+	k8s.io/kubelet => ../kubelet
+	k8s.io/streaming => ../streaming
+)
