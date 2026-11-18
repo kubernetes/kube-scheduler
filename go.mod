@@ -12,7 +12,7 @@ require (
 	k8s.io/apimachinery v0.0.0-20261113044458-398326f9ce6a
 	k8s.io/client-go v0.0.0-20261118002137-71f6edbff835
 	k8s.io/component-base v0.0.0-20261113210150-fd8dd3143f25
-	k8s.io/component-helpers v0.0.0-20261117083632-b593592ac8c1
+	k8s.io/component-helpers v0.0.0-20261118202913-32cbfaebd93e
 	k8s.io/dynamic-resource-allocation v0.0.0-20261118053137-e2df82aeb27e
 	k8s.io/klog/v2 v2.140.0
 	sigs.k8s.io/yaml v1.6.0
@@ -51,3 +51,5 @@ require (
 	sigs.k8s.io/randfill v1.0.0 // indirect
 	sigs.k8s.io/structured-merge-diff/v7 v7.0.1 // indirect
 )
+
+replace k8s.io/apiserver => k8s.io/apiserver v0.0.0-20261118203815-c55fe3876504
